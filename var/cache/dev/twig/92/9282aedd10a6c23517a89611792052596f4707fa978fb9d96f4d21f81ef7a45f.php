@@ -154,7 +154,6 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 48, $this->source); })()), 'form_end');
         echo "
                         
-
                     </div>
                 </div>
             </div>
@@ -234,7 +233,6 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
                         
                         {{ form_end(registrationForm) }}
                         
-
                     </div>
                 </div>
             </div>

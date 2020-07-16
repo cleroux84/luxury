@@ -187,7 +187,10 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                             </a>
                         </li>
                         <li class=\" dropdown\">
-                            <a target=\"_self\" href=\"/templates/auth/register.html\" class=\"btn bn-lg gradient secondary btn-block waves-effect waves-light btn-register\">
+                            <a target=\"_self\" href=\"";
+        // line 129
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
+        echo "\" class=\"btn bn-lg gradient secondary btn-block waves-effect waves-light btn-register\">
                                 <span>Sign Up</span>
                             </a>
 
@@ -450,7 +453,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
 
     public function getDebugInfo()
     {
-        return array (  424 => 167,  406 => 80,  388 => 33,  369 => 14,  232 => 168,  230 => 167,  140 => 80,  92 => 34,  90 => 33,  78 => 24,  74 => 23,  62 => 14,  47 => 1,);
+        return array (  427 => 167,  409 => 80,  391 => 33,  372 => 14,  235 => 168,  233 => 167,  192 => 129,  140 => 80,  92 => 34,  90 => 33,  78 => 24,  74 => 23,  62 => 14,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -583,7 +586,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                             </a>
                         </li>
                         <li class=\" dropdown\">
-                            <a target=\"_self\" href=\"/templates/auth/register.html\" class=\"btn bn-lg gradient secondary btn-block waves-effect waves-light btn-register\">
+                            <a target=\"_self\" href=\"{{path('app_register')}}\" class=\"btn bn-lg gradient secondary btn-block waves-effect waves-light btn-register\">
                                 <span>Sign Up</span>
                             </a>
 
