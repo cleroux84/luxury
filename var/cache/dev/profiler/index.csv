@@ -1,0 +1,5 @@
+35b8fd,172.16.238.1,GET,http://luxury_tp.loc/,1594899597,,404
+b3e919,172.16.238.1,GET,http://luxury_tp.loc/home,1594899602,,200
+b8b752,172.16.238.1,GET,http://luxury_tp.loc/register,1594899619,,200
+a47b0f,172.16.238.1,POST,http://luxury_tp.loc/register,1594899638,,302
+e3857a,172.16.238.1,GET,http://luxury_tp.loc/home,1594899638,,200
