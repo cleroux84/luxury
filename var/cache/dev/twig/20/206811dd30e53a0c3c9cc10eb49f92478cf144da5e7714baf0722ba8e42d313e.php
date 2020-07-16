@@ -65,7 +65,7 @@ class __TwigTemplate_3ebdcb42771fbb271bcdaa634cd180dee1a2ec5b82e9e38bad2efc34847
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello HomeController!";
+        echo "LUXURY !";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -539,7 +539,7 @@ class __TwigTemplate_3ebdcb42771fbb271bcdaa634cd180dee1a2ec5b82e9e38bad2efc34847
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}LUXURY !{% endblock %}
 
 {% block body %}
 <div class=\"base\">
