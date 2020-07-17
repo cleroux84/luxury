@@ -77,7 +77,7 @@
     <script src="http://kys.idmkr.io/cache/assets/frontend.kys.revolution-ext-migration.f05042883f3b2c4d6fdc843e9d033d3a_1547807821.js"></script>
     <script src="http://kys.idmkr.io/cache/assets/frontend.kys.revolution-ext-parallax.402830701f2cb1475353aa7335920e6b_1547807822.js"></script>
 
-        {% block javascripts %}{% endblock %}  
+        
    
 </head>
 
@@ -121,7 +121,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="menuzord-menu pull-right light" role="navigation">
                         <li class=" dropdown">
-                            <a target="_self" href="/templates/auth/login.html">
+                            <a target="_self" href="{{path('app_login')}}">
                                 <span>Login</span>
                             </a>
                         </li>
@@ -224,7 +224,7 @@
     </div><!-- /.secondary-footer -->
 </footer>
 
-
+{% block javascripts %}{% endblock %}  
 <!-- RS5.0 Init  -->
 <script type="text/javascript">
     document.querySelector(".rev_slider_wrapper").setAttribute("style",

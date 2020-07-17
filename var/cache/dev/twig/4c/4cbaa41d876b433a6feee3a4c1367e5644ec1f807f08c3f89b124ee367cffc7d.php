@@ -25,8 +25,10 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'stylesheets' => [$this, 'block_stylesheets'],
             'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
+            'javascripts' => [$this, 'block_javascripts'],
         ];
     }
 
@@ -56,6 +58,31 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
     }
 
     // line 3
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 4
+        echo "     <style>
+        select {
+            display: block!important;
+        }
+    </style>
+ ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 11
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -74,7 +101,7 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
 
     }
 
-    // line 5
+    // line 13
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,23 +111,53 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "    <h1>Edit Candidate</h1>
+        // line 14
+        echo "
+
+   
 
     ";
-        // line 8
+        // line 18
         echo twig_include($this->env, $context, "candidate/_form.html.twig", ["button_label" => "Update"]);
         echo "
 
     <a href=\"";
-        // line 10
+        // line 20
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("candidate_index");
         echo "\">back to list</a>
 
     ";
-        // line 12
+        // line 22
         echo twig_include($this->env, $context, "candidate/_delete_form.html.twig");
         echo "
+
+
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 27
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 28
+        echo "    <script type=\"text/javascript\">
+
+        onAppReady(function() {
+            \$('.preload').remove();
+        });
+    </script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -122,24 +179,44 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
 
     public function getDebugInfo()
     {
-        return array (  102 => 12,  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  155 => 28,  145 => 27,  131 => 22,  126 => 20,  121 => 18,  115 => 14,  105 => 13,  86 => 11,  71 => 4,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
+ {% block stylesheets %}
+     <style>
+        select {
+            display: block!important;
+        }
+    </style>
+ {% endblock %}
+
 {% block title %}Edit Candidate{% endblock %}
 
 {% block body %}
-    <h1>Edit Candidate</h1>
+
+
+   
 
     {{ include('candidate/_form.html.twig', {'button_label': 'Update'}) }}
 
     <a href=\"{{ path('candidate_index') }}\">back to list</a>
 
     {{ include('candidate/_delete_form.html.twig') }}
+
+
 {% endblock %}
-", "candidate/edit.html.twig", "/shared/httpd/luxury_tp/templates/candidate/edit.html.twig");
+
+{% block javascripts %}
+    <script type=\"text/javascript\">
+
+        onAppReady(function() {
+            \$('.preload').remove();
+        });
+    </script>
+{% endblock %}", "candidate/edit.html.twig", "/shared/httpd/luxury_tp/templates/candidate/edit.html.twig");
     }
 }

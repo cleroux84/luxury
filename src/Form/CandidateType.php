@@ -4,8 +4,10 @@ namespace App\Form;
 
 use App\Entity\Candidate;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+
 
 class CandidateType extends AbstractType
 {
@@ -13,10 +15,16 @@ class CandidateType extends AbstractType
     {
         $builder
             ->add('email')
-            /* ->add('roles') */
             ->add('password')
+            /* ->add('password_confirm') */
             ->add('isVerified')
-            ->add('gender')
+            ->add('gender', ChoiceType::class, [
+                'choices' => [
+                    'Male' => true,
+                    'Female' => true,
+                    'Transgender' => true,
+            ],        
+            ])
             ->add('first_name')
             ->add('last_name')
             ->add('address')

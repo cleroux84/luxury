@@ -71,6 +71,7 @@ class CandidateController extends AbstractController
 
             return $this->redirectToRoute('candidate_index');
         }
+        /* fonction pourcentage */
 
         return $this->render('candidate/edit.html.twig', [
             'candidate' => $candidate,
@@ -89,6 +90,6 @@ class CandidateController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('candidate_index');
+        return $this->redirectToRoute('home');
     }
 }
