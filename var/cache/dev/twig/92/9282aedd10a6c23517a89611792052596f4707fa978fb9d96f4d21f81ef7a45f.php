@@ -25,8 +25,10 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'stylesheets' => [$this, 'block_stylesheets'],
             'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
+            'javascripts' => [$this, 'block_javascripts'],
         ];
     }
 
@@ -56,6 +58,48 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
     }
 
     // line 3
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 4
+        echo "    <style>
+        .page-title-bg {
+            background-image: url(../../assets/img/bg3.jpg);
+        }
+        .log-section form .checkbox label {
+            font-size: 16px
+        }
+        .log-section form .checkbox label a {
+            color: #b6a575;
+            text-decoration: underline;
+            text-transform: inherit;
+            font-size: 16px
+        }
+        .log-section form .links a {
+            display: block;
+            text-align: center;
+            color: #b6a575;
+            text-decoration: underline;
+            text-transform: inherit;
+            font-size: 16px
+        }
+    </style>
+ ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 28
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -74,7 +118,7 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
 
     }
 
-    // line 5
+    // line 30
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,12 +128,30 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "    ";
+        // line 31
+        echo "
+  <!-- Page Header-->
+        <section class=\"page-title page-title-bg fixed-bg overlay dark-5 padding-top-160 padding-bottom-80\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-md-12\">
+                        <h2 class=\"white-text\">Register</h2>
+                        <span class=\"white-text\">Welcome on board</span>
+                        <ol class=\"breadcrumb\">
+                            <li><a href=\"#!\">Home</a></li>
+                            <li class=\"active\">Register</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    ";
+        // line 48
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 6, $this->source); })()), "flashes", [0 => "verify_email_error"], "method", false, false, false, 6));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 48, $this->source); })()), "flashes", [0 => "verify_email_error"], "method", false, false, false, 48));
         foreach ($context['_seq'] as $context["_key"] => $context["flashError"]) {
-            // line 7
+            // line 49
             echo "        <div class=\"alert alert-danger\" role=\"alert\">";
             echo twig_escape_filter($this->env, $context["flashError"], "html", null, true);
             echo "</div>
@@ -98,7 +160,7 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashError'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 9
+        // line 51
         echo "
     <!-- Page Content-->
         <section class=\"section-padding gray-bg log-section\">
@@ -109,15 +171,15 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
                        
 
                         ";
-        // line 18
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 18, $this->source); })()), 'form_start');
+        // line 60
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 60, $this->source); })()), 'form_start');
         echo "
 
                          <input type=\"hidden\" name=\"_token\" value=\"\">    
                          <div class=\"input-field\">
                             ";
-        // line 22
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 22, $this->source); })()), "email", [], "any", false, false, false, 22), 'row');
+        // line 64
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 64, $this->source); })()), "email", [], "any", false, false, false, 64), 'row');
         echo "
                              <label for=\"email\">Email</label>
                             <span class=\"help-block\">Type your email address.</span>
@@ -125,9 +187,9 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
                         
                              <div class=\"input-field\">
                             ";
-        // line 28
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 28, $this->source); })()), "plainPassword", [], "any", false, false, false, 28), 'row', ["label" => "Password"]);
-        // line 30
+        // line 70
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 70, $this->source); })()), "plainPassword", [], "any", false, false, false, 70), 'row', ["label" => "Password"]);
+        // line 72
         echo "
                                 <i class=\"fa fa-eye show-password\"></i>
                                 <span class=\"help-block\">Type your password.</span>
@@ -137,8 +199,8 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
 
                             <div class=\"checkbox\">
                             ";
-        // line 38
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 38, $this->source); })()), "agreeTerms", [], "any", false, false, false, 38), 'row');
+        // line 80
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 80, $this->source); })()), "agreeTerms", [], "any", false, false, false, 80), 'row');
         echo "
                               <input type=\"checkbox\" name=\"accept-terms\" value=\"1\" id=\"accept-terms\" required/>
                               <label for=\"accept-terms\">I have read and I accept the <a href=\"#!\" target=\"_blank\">Terms Of Use</a></label>
@@ -150,14 +212,40 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
                             </div>
                         
                         ";
-        // line 48
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 48, $this->source); })()), 'form_end');
+        // line 90
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 90, $this->source); })()), 'form_end');
         echo "
                         
                     </div>
                 </div>
             </div>
         </section>
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 97
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 98
+        echo "<script type=\"text/javascript\">
+
+    onAppReady(function() {
+        \$('.preload').remove();
+    });
+</script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -179,16 +267,58 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
 
     public function getDebugInfo()
     {
-        return array (  154 => 48,  141 => 38,  131 => 30,  129 => 28,  120 => 22,  113 => 18,  102 => 9,  93 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  243 => 98,  233 => 97,  216 => 90,  203 => 80,  193 => 72,  191 => 70,  182 => 64,  175 => 60,  164 => 51,  155 => 49,  151 => 48,  132 => 31,  122 => 30,  103 => 28,  71 => 4,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
+ {% block stylesheets %}
+    <style>
+        .page-title-bg {
+            background-image: url(../../assets/img/bg3.jpg);
+        }
+        .log-section form .checkbox label {
+            font-size: 16px
+        }
+        .log-section form .checkbox label a {
+            color: #b6a575;
+            text-decoration: underline;
+            text-transform: inherit;
+            font-size: 16px
+        }
+        .log-section form .links a {
+            display: block;
+            text-align: center;
+            color: #b6a575;
+            text-decoration: underline;
+            text-transform: inherit;
+            font-size: 16px
+        }
+    </style>
+ {% endblock %}
+
 {% block title %}Register{% endblock %}
 
 {% block body %}
+
+  <!-- Page Header-->
+        <section class=\"page-title page-title-bg fixed-bg overlay dark-5 padding-top-160 padding-bottom-80\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-md-12\">
+                        <h2 class=\"white-text\">Register</h2>
+                        <span class=\"white-text\">Welcome on board</span>
+                        <ol class=\"breadcrumb\">
+                            <li><a href=\"#!\">Home</a></li>
+                            <li class=\"active\">Register</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     {% for flashError in app.flashes('verify_email_error') %}
         <div class=\"alert alert-danger\" role=\"alert\">{{ flashError }}</div>
     {% endfor %}
@@ -238,6 +368,13 @@ class __TwigTemplate_40a499dabf2fe2c329a1f542098aabf082d15bfec0bf1234febc2c79c51
             </div>
         </section>
 {% endblock %}
-", "registration/register.html.twig", "/shared/httpd/luxury_tp/templates/registration/register.html.twig");
+{% block javascripts %}
+<script type=\"text/javascript\">
+
+    onAppReady(function() {
+        \$('.preload').remove();
+    });
+</script>
+{% endblock %}", "registration/register.html.twig", "/shared/httpd/luxury_tp/templates/registration/register.html.twig");
     }
 }

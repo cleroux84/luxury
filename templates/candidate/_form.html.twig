@@ -69,7 +69,10 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-4">
-                       {#  PHOTOS #}
+                         <div class="btn btn-lg primary waves-effect waves-light">
+                            <span><i class="material-icons">&#xE24D;</i> your picture</span>
+                            {{ form_widget(form.profil_picture) }}
+                            </div>
                         </div>
                          <div class="col-xs-12 col-sm-6 col-md-4">
                             {{form_label(form.country, 'Country')}}
@@ -85,7 +88,6 @@
                   
                         </div>
                          <div class="col-xs-12 col-sm-6 col-md-4">
-                         {#    datetime #}
                             {{form_label(form.date_birth, 'Birthdate')}}
                             {{form_widget(form.date_birth)}}
                         </div>
@@ -100,21 +102,32 @@
                         <div class="col-xs-12 col-sm-6">
 
                             <div class="card card-panel passport">
-                                <div class="file-field input-field">
-                                {# passeport #}<p>passeport</p>
-                                </div>
-                                <div class="file-field input-field">
-                                {# cv #} <p>CV</p>
-                                </div>
+                               
+                                    <div class="btn btn-lg primary waves-effect waves-light">
+                                    <span><i class="material-icons">&#xE24D;</i> Passport</span>
+
+                                        {{ form_widget(form.passport_file) }}
+                                        
+                                    </div>
+                                    <br><br>
+
+                                    <div class="btn btn-lg primary waves-effect waves-light">
+                                    <span><i class="material-icons">&#xE24D;</i> CV</span>
+    
+                                        {{ form_widget(form.cv_file) }}
+                                    </div>
+                                   
                             </div>
-                        </div>
+                            
+
+                            </div>
                         <div class="col-xs-12 col-sm-6">
                             
                                 <div class="input-field" style="margin-top: 5px;">
-                                <p>Interest un job sector</p>
+                                {{form_widget(form.job_category)}}
                                 </div>
                                  <div class="input-field" style="margin-top: 5px;">
-                                <p>select experience</p>
+                                 {{form_widget(form.experience)}}
                                 </div>
                         </div>
                         <div class="col-xs-12 col-sm-12">
