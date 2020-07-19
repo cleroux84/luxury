@@ -121,13 +121,8 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
         echo twig_include($this->env, $context, "candidate/_form.html.twig", ["button_label" => "Update"]);
         echo "
 
-    <a href=\"";
-        // line 20
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("candidate_index");
-        echo "\">back to list</a>
-
     ";
-        // line 22
+        // line 20
         echo twig_include($this->env, $context, "candidate/_delete_form.html.twig");
         echo "
 
@@ -141,7 +136,7 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
 
     }
 
-    // line 27
+    // line 25
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -151,7 +146,7 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 28
+        // line 26
         echo "    <script type=\"text/javascript\">
 
         onAppReady(function() {
@@ -179,7 +174,7 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
 
     public function getDebugInfo()
     {
-        return array (  155 => 28,  145 => 27,  131 => 22,  126 => 20,  121 => 18,  115 => 14,  105 => 13,  86 => 11,  71 => 4,  61 => 3,  38 => 1,);
+        return array (  150 => 26,  140 => 25,  126 => 20,  121 => 18,  115 => 14,  105 => 13,  86 => 11,  71 => 4,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -202,8 +197,6 @@ class __TwigTemplate_e7429bf19e0158aee43ec4f49a271d730fe30c6e2734d53d39f57058188
    
 
     {{ include('candidate/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href=\"{{ path('candidate_index') }}\">back to list</a>
 
     {{ include('candidate/_delete_form.html.twig') }}
 

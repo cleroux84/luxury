@@ -231,13 +231,9 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
                             </div>
                         <div class=\"col-xs-12 col-sm-6\">
                             
-                                <div class=\"input-field\" style=\"margin-top: 5px;\">
-                                ";
-        // line 127
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 127, $this->source); })()), "job_category", [], "any", false, false, false, 127), 'widget');
-        echo "
-                                </div>
-                                 <div class=\"input-field\" style=\"margin-top: 5px;\">
+                              ";
+        // line 129
+        echo "                                 <div class=\"input-field\" style=\"margin-top: 5px;\">
                                  ";
         // line 130
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 130, $this->source); })()), "experience", [], "any", false, false, false, 130), 'widget');
@@ -256,13 +252,17 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
                     </div>
                 </div>
             </section>
-    <button class=\"btn\">";
-        // line 142
-        echo twig_escape_filter($this->env, (((isset($context["button_label"]) || array_key_exists("button_label", $context))) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 142, $this->source); })()), "Save")) : ("Save")), "html", null, true);
-        echo "</button>
+                        <div class=\"col-xs-12 col-sm-6 col-md-4 col-md-offset-4\">
+                            <button type=\"submit\" class=\"btn btn-block btn-lg gradient secondary waves-effect waves-light\">
+                                ";
+        // line 144
+        echo twig_escape_filter($this->env, (((isset($context["button_label"]) || array_key_exists("button_label", $context))) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 144, $this->source); })()), "UPDATE NOW")) : ("UPDATE NOW")), "html", null, true);
+        echo "
+                            </button>
+                        </div>
 ";
-        // line 143
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 143, $this->source); })()), 'form_end');
+        // line 147
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 147, $this->source); })()), 'form_end');
         echo "
 ";
         
@@ -285,7 +285,7 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
 
     public function getDebugInfo()
     {
-        return array (  265 => 143,  261 => 142,  251 => 135,  243 => 130,  237 => 127,  224 => 117,  213 => 109,  198 => 97,  194 => 96,  187 => 92,  183 => 91,  172 => 83,  168 => 82,  162 => 79,  158 => 78,  151 => 74,  141 => 67,  137 => 66,  131 => 63,  127 => 62,  119 => 57,  115 => 56,  109 => 53,  105 => 52,  99 => 49,  95 => 48,  86 => 42,  43 => 1,);
+        return array (  265 => 147,  259 => 144,  247 => 135,  239 => 130,  236 => 129,  224 => 117,  213 => 109,  198 => 97,  194 => 96,  187 => 92,  183 => 91,  172 => 83,  168 => 82,  162 => 79,  158 => 78,  151 => 74,  141 => 67,  137 => 66,  131 => 63,  127 => 62,  119 => 57,  115 => 56,  109 => 53,  105 => 52,  99 => 49,  95 => 48,  86 => 42,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -415,9 +415,9 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
                             </div>
                         <div class=\"col-xs-12 col-sm-6\">
                             
-                                <div class=\"input-field\" style=\"margin-top: 5px;\">
+                              {#   <div class=\"input-field\" style=\"margin-top: 5px;\">
                                 {{form_widget(form.job_category)}}
-                                </div>
+                                </div> #}
                                  <div class=\"input-field\" style=\"margin-top: 5px;\">
                                  {{form_widget(form.experience)}}
                                 </div>
@@ -431,7 +431,11 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
                     </div>
                 </div>
             </section>
-    <button class=\"btn\">{{ button_label|default('Save') }}</button>
+                        <div class=\"col-xs-12 col-sm-6 col-md-4 col-md-offset-4\">
+                            <button type=\"submit\" class=\"btn btn-block btn-lg gradient secondary waves-effect waves-light\">
+                                {{ button_label|default('UPDATE NOW') }}
+                            </button>
+                        </div>
 {{ form_end(form) }}
 ", "candidate/_form.html.twig", "/shared/httpd/luxury_tp/templates/candidate/_form.html.twig");
     }

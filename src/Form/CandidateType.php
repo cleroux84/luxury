@@ -25,9 +25,9 @@ class CandidateType extends AbstractType
             ->add('isVerified')
             ->add('gender', ChoiceType::class, [
                 'choices' => [
-                    'Male' => true,
-                    'Female' => true,
-                    'Transgender' => true,
+                    'Male' => 'Male',
+                    'Female' => 'Female',
+                    'Transgender' => 'Transgender',
             ],        
             ])
             ->add('first_name')
@@ -119,12 +119,12 @@ class CandidateType extends AbstractType
             ]) */
             ->add('experience', ChoiceType::class, [
                 'choices' => [
-                    '0 - 6 months' => true,
-                    '6 months - 1 year ' => true,
-                    '1 - 2 years' => true,
-                    '2+ years' => true,
-                    '5+ years' => true,
-                    '10+ yeards' => true,
+                    '0 - 6 months' => '0 - 6 months',
+                    '6 months - 1 year' => '6 months - 1 year',
+                    '1 - 2 years' => '1 - 2 years',
+                    '2+ years' => '2+ years',
+                    '5+ years' => '5+ years',
+                    '10+ yeards' => '10+ yeards',
             ],        
             ])
             ->add('short_description', TextareaType::class)

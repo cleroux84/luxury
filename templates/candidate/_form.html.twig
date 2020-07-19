@@ -123,9 +123,9 @@
                             </div>
                         <div class="col-xs-12 col-sm-6">
                             
-                                <div class="input-field" style="margin-top: 5px;">
+                              {#   <div class="input-field" style="margin-top: 5px;">
                                 {{form_widget(form.job_category)}}
-                                </div>
+                                </div> #}
                                  <div class="input-field" style="margin-top: 5px;">
                                  {{form_widget(form.experience)}}
                                 </div>
@@ -139,5 +139,9 @@
                     </div>
                 </div>
             </section>
-    <button class="btn">{{ button_label|default('Save') }}</button>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4">
+                            <button type="submit" class="btn btn-block btn-lg gradient secondary waves-effect waves-light">
+                                {{ button_label|default('UPDATE NOW') }}
+                            </button>
+                        </div>
 {{ form_end(form) }}
