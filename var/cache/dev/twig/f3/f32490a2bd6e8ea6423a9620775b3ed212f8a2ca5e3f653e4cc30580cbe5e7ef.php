@@ -166,7 +166,9 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                         <nav class=\"overlay-menu\">
                             <ul>
                                 <li><a href=\"/\">Home</a></li>
-                                <li><a href=\"/templates/jobs/index.html\">Jobs Offers</a></li>
+                                <li><a href=\"";
+        // line 111
+        echo "\" >Jobs Offers</a></li>
                                 <li><a href=\"/templates/company.html\">About Us</a></li>
                                 <li><a href=\"/templates/contact.html\">Contact</a></li>
                                 <li>-</li>
@@ -456,7 +458,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
 
     public function getDebugInfo()
     {
-        return array (  430 => 227,  412 => 167,  394 => 33,  375 => 14,  296 => 227,  235 => 168,  233 => 167,  192 => 129,  184 => 124,  92 => 34,  90 => 33,  78 => 24,  74 => 23,  62 => 14,  47 => 1,);
+        return array (  432 => 227,  414 => 167,  396 => 33,  377 => 14,  298 => 227,  237 => 168,  235 => 167,  194 => 129,  186 => 124,  171 => 111,  92 => 34,  90 => 33,  78 => 24,  74 => 23,  62 => 14,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -571,7 +573,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                         <nav class=\"overlay-menu\">
                             <ul>
                                 <li><a href=\"/\">Home</a></li>
-                                <li><a href=\"/templates/jobs/index.html\">Jobs Offers</a></li>
+                                <li><a href=\"{# {{ path('job_offer_show', {'id': job_offer.id}) }} #}\" >Jobs Offers</a></li>
                                 <li><a href=\"/templates/company.html\">About Us</a></li>
                                 <li><a href=\"/templates/contact.html\">Contact</a></li>
                                 <li>-</li>
