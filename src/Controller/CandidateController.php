@@ -72,11 +72,26 @@ class CandidateController extends AbstractController
             return $this->redirectToRoute('candidate_index');
         }
         /* fonction pourcentage */
-
+        $pourcentage = 0;
+        if($candidate->getGender() && $candidate->getFirstName() && $candidate->getLastName()){
+        $pourcentage = 100;
+        } 
+        /* if($candidate->getGender()){
+            $pourcentage += (100/16);
+        }
+        if($candidate->getFirstName()){
+            $pourcentage += (100/16);
+        }
+        if($candidate->getLastName()){
+            $pourcentage += (100/16);
+        } 
+        continuer avec les 16 champs*/
         return $this->render('candidate/edit.html.twig', [
             'candidate' => $candidate,
             'form' => $form->createView(),
-        ]);
+            'pourcentage' => $pourcentage,
+            
+            ]);
     }
 
     /**

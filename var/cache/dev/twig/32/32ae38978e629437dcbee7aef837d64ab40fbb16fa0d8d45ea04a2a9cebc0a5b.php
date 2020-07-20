@@ -69,7 +69,10 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
                             &nbsp; Hooray ! Your profile is complete.
                         </h4>
                         <div class=\"c100 p100 small complete \">
-                            <span>100%</span>
+                            <span>";
+        // line 30
+        echo twig_escape_filter($this->env, (isset($context["pourcentage"]) || array_key_exists("pourcentage", $context) ? $context["pourcentage"] : (function () { throw new RuntimeError('Variable "pourcentage" does not exist.', 30, $this->source); })()), "html", null, true);
+        echo "%</span>
                             <div class=\"slice\">
                                 <div class=\"bar\"></div>
                                 <div class=\"fill\"></div>
@@ -285,7 +288,7 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
 
     public function getDebugInfo()
     {
-        return array (  265 => 147,  259 => 144,  247 => 135,  239 => 130,  236 => 129,  224 => 117,  213 => 109,  198 => 97,  194 => 96,  187 => 92,  183 => 91,  172 => 83,  168 => 82,  162 => 79,  158 => 78,  151 => 74,  141 => 67,  137 => 66,  131 => 63,  127 => 62,  119 => 57,  115 => 56,  109 => 53,  105 => 52,  99 => 49,  95 => 48,  86 => 42,  43 => 1,);
+        return array (  268 => 147,  262 => 144,  250 => 135,  242 => 130,  239 => 129,  227 => 117,  216 => 109,  201 => 97,  197 => 96,  190 => 92,  186 => 91,  175 => 83,  171 => 82,  165 => 79,  161 => 78,  154 => 74,  144 => 67,  140 => 66,  134 => 63,  130 => 62,  122 => 57,  118 => 56,  112 => 53,  108 => 52,  102 => 49,  98 => 48,  89 => 42,  74 => 30,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -319,7 +322,7 @@ class __TwigTemplate_adf69830c9b537ff2096c8ce46e98baf7bc98d0f2a7f56235fc64b5d3b3
                             &nbsp; Hooray ! Your profile is complete.
                         </h4>
                         <div class=\"c100 p100 small complete \">
-                            <span>100%</span>
+                            <span>{{ pourcentage }}%</span>
                             <div class=\"slice\">
                                 <div class=\"bar\"></div>
                                 <div class=\"fill\"></div>

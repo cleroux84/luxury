@@ -151,6 +151,11 @@ class Candidate implements UserInterface
      */
     private $is_admin;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=JobCategory::class, inversedBy="candidates")
+     */
+    private $jobcategory;
+
     public function getId(): ?int
     {
         return $this->id;

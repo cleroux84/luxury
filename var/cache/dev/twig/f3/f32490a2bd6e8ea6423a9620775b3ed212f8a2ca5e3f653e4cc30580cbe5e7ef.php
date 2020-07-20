@@ -167,7 +167,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                             <ul>
                                 <li><a href=\"/\">Home</a></li>
                                 <li><a href=\"/templates/jobs/index.html\">Jobs Offers</a></li>
-                                <li><a href=\"/templates/compagny.html\">About Us</a></li>
+                                <li><a href=\"/templates/company.html\">About Us</a></li>
                                 <li><a href=\"/templates/contact.html\">Contact</a></li>
                                 <li>-</li>
                                 <li><a href=\"/templates/auth/profile.html\">Profile</a></li>
@@ -210,7 +210,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                             </a>
                         </li>
                         <li class=\" dropdown\">
-                            <a target=\"_self\" href=\"/templates/compagny.html\">
+                            <a target=\"_self\" href=\"/templates/company.html\">
                                 <i class=\"\"></i>
                                 <span>About us</span>
                             </a>
@@ -277,7 +277,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                     </a>
                 </li>
                 <li class=\" dropdown\">
-                    <a target=\"_self\" href=\"/templates/compagny.html\">
+                    <a target=\"_self\" href=\"/templates/company.html\">
                         <span>About us</span>
                     </a>
                 </li>
@@ -572,7 +572,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                             <ul>
                                 <li><a href=\"/\">Home</a></li>
                                 <li><a href=\"/templates/jobs/index.html\">Jobs Offers</a></li>
-                                <li><a href=\"/templates/compagny.html\">About Us</a></li>
+                                <li><a href=\"/templates/company.html\">About Us</a></li>
                                 <li><a href=\"/templates/contact.html\">Contact</a></li>
                                 <li>-</li>
                                 <li><a href=\"/templates/auth/profile.html\">Profile</a></li>
@@ -609,7 +609,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                             </a>
                         </li>
                         <li class=\" dropdown\">
-                            <a target=\"_self\" href=\"/templates/compagny.html\">
+                            <a target=\"_self\" href=\"/templates/company.html\">
                                 <i class=\"\"></i>
                                 <span>About us</span>
                             </a>
@@ -673,7 +673,7 @@ class __TwigTemplate_540f19a2959f5dc78fcff9b97195e37105600b5d53a2dca6248a4699920
                     </a>
                 </li>
                 <li class=\" dropdown\">
-                    <a target=\"_self\" href=\"/templates/compagny.html\">
+                    <a target=\"_self\" href=\"/templates/company.html\">
                         <span>About us</span>
                     </a>
                 </li>
